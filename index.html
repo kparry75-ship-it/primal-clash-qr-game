@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Primal Clash</title>
+<title>QR ROYAL BATTLE</title>
 <style>
 *{box-sizing:border-box}
 body{
@@ -118,7 +118,7 @@ button:disabled{opacity:.4}
 
 <main>
 
-<div class="logo">PRIMAL CLASH</div>
+<div class="logo">QR ROYAL BATTLE</div>
 <div class="sub">QR CARD BATTLE GAME</div>
 
 <section class="card">
@@ -135,7 +135,7 @@ button:disabled{opacity:.4}
 
   <div class="ability">
     <b>ABILITY</b><br>
-    <span id="ability">Scan a Primal Clash QR card to load the fighter.</span>
+    <span id="ability">Scan a QR ROYAL BATTLE  QR card to load the fighter.</span>
   </div>
 
 </section>
@@ -147,4 +147,22 @@ button:disabled{opacity:.4}
   <div class="buttons">
     <button id="normal">NORMAL ATTACK</button>
     <button id="abilityBtn">USE ABILITY</button>
- 
+    
+ <div id="result" class="result">Ability can be used once per fight.</div>
+
+<div class="buttons">
+  <button id="reset" class="secondary">NEW FIGHT</button>
+</div>
+
+</section>
+
+<p class="help">
+Your printed QR Royal Battle cards can still be used.
+</p>
+
+</main>
+
+<script src="https://jlykhxlnezvqmjupkhll.supabase.co/functions/v1/qr-royal-script"></script>
+
+</body>
+</html>
