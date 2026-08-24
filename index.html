@@ -1,0 +1,150 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Primal Clash</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:radial-gradient(circle at top,#2a210c,#0b0d12 42%,#07080b 100%);
+  color:white;
+}
+main{max-width:680px;margin:auto;padding:18px}
+.logo{
+  text-align:center;
+  font-size:42px;
+  font-weight:900;
+  letter-spacing:2px;
+  color:#f4c34f;
+  text-shadow:0 3px 16px #000;
+}
+.sub{
+  text-align:center;
+  color:#ddd;
+  letter-spacing:3px;
+  margin-top:4px;
+}
+.card{
+  background:linear-gradient(145deg,#242a35,#15191f);
+  border:3px solid #f4c34f;
+  border-radius:24px;
+  padding:20px;
+  margin:18px 0;
+  box-shadow:0 10px 28px #0008;
+}
+.portrait{
+  height:220px;
+  border-radius:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:92px;
+  background:radial-gradient(circle,#4f5969,#15191f);
+  border:1px solid #ffffff22;
+}
+.name{
+  text-align:center;
+  font-size:30px;
+  font-weight:900;
+  margin:14px 0 10px;
+}
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.pill{
+  background:#0d1016;
+  border:1px solid #f4c34f;
+  border-radius:999px;
+  padding:9px 14px;
+  font-weight:bold;
+}
+.ability{
+  margin-top:14px;
+  padding:14px;
+  background:#0f1218;
+  border-radius:14px;
+  line-height:1.4;
+  text-align:center;
+}
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+button{
+  font-size:18px;
+  font-weight:900;
+  padding:15px 20px;
+  border:0;
+  border-radius:14px;
+  background:#f4c34f;
+  color:#111;
+  box-shadow:0 5px 0 #9f7414;
+}
+button:active{
+  transform:translateY(3px);
+  box-shadow:0 2px 0 #9f7414;
+}
+button:disabled{opacity:.4}
+.secondary{
+  background:#ececec;
+  box-shadow:0 5px 0 #888;
+}
+.result{
+  min-height:58px;
+  margin-top:18px;
+  font-size:19px;
+  font-weight:bold;
+  text-align:center;
+}
+.help{
+  text-align:center;
+  font-size:14px;
+  color:#bbb;
+  line-height:1.5;
+}
+</style>
+</head>
+<body>
+
+<main>
+
+<div class="logo">PRIMAL CLASH</div>
+<div class="sub">QR CARD BATTLE GAME</div>
+
+<section class="card">
+
+  <div id="portrait" class="portrait">⚔️</div>
+
+  <div id="name" class="name">FIGHTER READY</div>
+
+  <div class="stats">
+    <span class="pill">❤️ HP <b id="hp">--</b></span>
+    <span class="pill">⚔️ ATTACK <b id="atk">--</b></span>
+    <span class="pill" id="type">HERO / MONSTER</span>
+  </div>
+
+  <div class="ability">
+    <b>ABILITY</b><br>
+    <span id="ability">Scan a Primal Clash QR card to load the fighter.</span>
+  </div>
+
+</section>
+
+<section class="card">
+
+  <h2 style="text-align:center">CHOOSE ATTACK</h2>
+
+  <div class="buttons">
+    <button id="normal">NORMAL ATTACK</button>
+    <button id="abilityBtn">USE ABILITY</button>
+ 
